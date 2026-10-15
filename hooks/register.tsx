@@ -9,12 +9,12 @@ const TITLE = 'Roadmap'
 const CANDIDATES = ['ROADMAP.md', 'Roadmap.md', 'roadmap.md', 'docs/ROADMAP.md', '.github/ROADMAP.md']
 const POLL_MS = 1500
 
-const DOC = { plugin: 'roadmap', key: 'doc' } as const
-const PATH = { plugin: 'roadmap', key: 'path' } as const
-const ERROR = { plugin: 'roadmap', key: 'error' } as const
+const DOC = { plugin: 'roadmap-pane', key: 'doc' } as const
+const PATH = { plugin: 'roadmap-pane', key: 'path' } as const
+const ERROR = { plugin: 'roadmap-pane', key: 'error' } as const
 
-const FILTER = { plugin: 'roadmap', key: 'filter' } as const
-const COLLAPSED = { plugin: 'roadmap', key: 'collapsed' } as const
+const FILTER = { plugin: 'roadmap-pane', key: 'filter' } as const
+const COLLAPSED = { plugin: 'roadmap-pane', key: 'collapsed' } as const
 
 async function locate($: EngineInterface): Promise<string | null> {
   const { value: chosen = null } = await $.state.get(PATH)

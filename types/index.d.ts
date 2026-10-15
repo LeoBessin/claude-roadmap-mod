@@ -36,7 +36,7 @@ export type RoadmapFilter = 'all' | 'open' | 'done'
 
 declare module 'claude-code' {
   interface PluginState {
-    roadmap: {
+    'roadmap-pane': {
       doc: Roadmap | null
       path: string | null
       error: string | null

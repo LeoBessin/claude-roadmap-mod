@@ -11,7 +11,7 @@ A Claude Code mod that shows your project's `ROADMAP.md` as a live timeline in a
 At the prompt of a terminal `claude` session:
 
 ```
-/plugin install roadmap --marketplace LeoBessin/claude-roadmap-mod
+/plugin install roadmap-pane --marketplace LeoBessin/claude-roadmap-mod
 ```
 
 Answer `y` to add the marketplace, then pick a scope (user scope loads it in every session). Once installed it also loads in Claude Code sessions started by the desktop app.

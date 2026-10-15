@@ -1,6 +1,7 @@
 {
-  "name": "roadmap",
-  "version": "0.2.0",
+  "name": "roadmap-pane",
+  "displayName": "Roadmap pane",
+  "version": "0.3.0",
   "description": "A live pane that draws the project's ROADMAP.md as a timeline: overall progress, one row per phase, and tasks you can tick off. It opens by itself when the project has a ROADMAP.md, checks for it every 1.5 seconds to pick up changes, and edits it only when you tick or untick a task in the pane (or press Create roadmap). No network access.",
   "author": {
     "name": "Léo B.",
