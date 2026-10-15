@@ -16,6 +16,16 @@ At the prompt of a terminal `claude` session:
 
 Answer `y` to add the marketplace, then pick a scope (user scope loads it in every session). Once installed it also loads in Claude Code sessions started by the desktop app.
 
+Or add the marketplace first, then install from it:
+
+```
+/plugin marketplace add LeoBessin/claude-roadmap-mod
+```
+
+```
+/plugin install roadmap-pane@claude-roadmap-mod
+```
+
 ## Use
 
 - Open a project that has a `ROADMAP.md`: the pane opens by itself.
