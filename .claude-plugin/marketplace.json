@@ -1,0 +1,15 @@
+{
+  "name": "claude-roadmap-mod",
+  "description": "The roadmap pane for Claude Code: your ROADMAP.md as a live timeline.",
+  "owner": {
+    "name": "Léo B.",
+    "url": "https://github.com/LeoBessin"
+  },
+  "plugins": [
+    {
+      "name": "roadmap",
+      "source": "./",
+      "description": "A live pane that draws the project's ROADMAP.md as a timeline: overall progress, one row per phase, and tasks you can tick off."
+    }
+  ]
+}

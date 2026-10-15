@@ -1,0 +1,18 @@
+{
+  "name": "roadmap",
+  "version": "0.1.0",
+  "description": "A live pane that draws the project's ROADMAP.md as a timeline: overall progress, one row per phase, and tasks you can tick off.",
+  "author": {
+    "name": "Léo B.",
+    "url": "https://github.com/LeoBessin"
+  },
+  "homepage": "https://github.com/LeoBessin/claude-roadmap-mod",
+  "repository": "https://github.com/LeoBessin/claude-roadmap-mod",
+  "license": "MIT",
+  "keywords": [
+    "roadmap",
+    "pane",
+    "mod"
+  ],
+  "types": "./types/index.d.ts"
+}
