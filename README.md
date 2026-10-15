@@ -23,7 +23,14 @@ Answer `y` to add the marketplace, then pick a scope (user scope loads it in eve
 - Click a phase to open or close it, click a task to tick it in the file.
 - Filter with All, Open and Done; ↻ reloads.
 
-The pane follows the file as it changes, including edits Claude makes.
+The pane follows the file as it changes, including edits Claude makes, within a couple of seconds.
+
+## What it does on your machine
+
+- **Reads:** looks for `ROADMAP.md`, `Roadmap.md`, `roadmap.md`, `docs/ROADMAP.md` or `.github/ROADMAP.md` in the session's working directory, or uses the file you named with `/roadmap`. Every 1.5 seconds while the session runs it checks whether those paths exist and reads the found file's modification time, rereading the file only when that changed.
+- **Writes:** changes the roadmap file only when you tick or untick a task in the pane, flipping that one line's `[ ]`/`[x]`. **Create roadmap** writes a starter `ROADMAP.md` when the project has none.
+- **Opens:** the pane opens by itself at session start when a roadmap file is found. Close it like any pane; `/roadmap` reopens it.
+- **Does not:** watch your prompts or Claude's tool calls, read any other file, or make network requests. There is no telemetry.
 
 ## Roadmap format
 

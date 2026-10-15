@@ -115,15 +115,6 @@ export const register: Register = on => {
     }
   })
 
-  // The model editing the roadmap shows up at once, not on the next poll.
-  on('tool.call', async ($, e, next) => {
-    const ran = await next(e)
-    const target = 'file_path' in e && typeof e.file_path === 'string' ? e.file_path : ''
-    if (/roadmap\.md$/i.test(target)) await refresh($, true)
-
-    return ran
-  })
-
   on('ui.render', { component: 'Pane', requestId: PANE }, async ($, e) => {
     const table = $.ui.resolve(e)
     const { Box, Text, Button } = table
